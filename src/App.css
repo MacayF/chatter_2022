@@ -1,6 +1,6 @@
 /* default page style */
 .App {
-  background: url("https://media.istockphoto.com/photos/white-marble-texture-for-background-picture-id1271849617?b=1&k=20&m=1271849617&s=170667a&w=0&h=WYd2lSX75V01mgEQ3XOimr42tkUEg6uGCzi1NlBmqsw=");
+  background: rgb(216, 216, 216);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,64 +11,82 @@
 }
 
 .header {
-  height: 7rem;
+  background: black;
+}
+
+.upper-header {
+  background: black;
   width: 100%;
-  border: 1rem outset #c4d9f848;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+  padding-left: 1rem;
+}
+
+.lower-header {
+  background: rgb(216, 216, 216);
+  width: 100%;
+  height: 5rem;
+  border-bottom: 1px outset #000000;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
-  background: rgba(255, 255, 255, 0.308);
-  filter: drop-shadow(0px 10px 4px #e5edf8);
+  padding: 1rem;
 }
 
 .logo {
-  height: 5rem;
-  width: 5rem;
+  height: 1.7rem;
+  width: 1.7rem;
   /* marble texture */
-  background-image: url("https://cdn.shopify.com/s/files/1/0360/3503/5273/products/david_1024x1024@2x.png?v=1587466339");
+  background-image: url("https://img.icons8.com/ios-glyphs/344/happy-mac.png");
+  filter: invert(100%);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.subtitle {
+  color: rgb(216, 216, 216);
+}
+
 .title {
-  color: rgb(219, 180, 50);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 2rem;
-  margin-left: 1rem;
 }
 
 .footer{
   height: 4rem;
   width: 100%;
-  border-top: 1rem outset #c4d9f848;
+  border-top: 1px outset #000000;
   display: flex;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   position: relative;
 }
 
 .text-input{
   width: 100%;
-  border: 0px solid white;
-  height: 2rem;
-  border-radius: 1rem;
+  height: 3rem;
   padding: 0 1rem;
-  background: rgb(215, 218, 226);
+  background: rgb(216, 216, 216);
+  border: 1px solid black;
   color: black;
 }
 
 .send{
   /* gold gradient */
-  background: linear-gradient(0deg, rgb(219, 135, 56) 0%, rgba(252,191,40,1) 27%, rgb(255, 245, 190) 100%);
-  border-radius: 50%;
-  border: none;
+  background: rgb(216, 216, 216);
+  border: 1px solid rgb(0, 0, 0);
   height: 1.5rem;
-  width: 1.5rem;
+  width: 4rem;
   position: absolute;
-  right: 1.2rem;
+  right: 2rem;
   cursor: pointer;
-  color: rgb(128, 74, 13);
+  color: black;
+  filter: drop-shadow(0.2rem 0.2rem 0px #000000);
+  font-size: 0.8rem;
 }
 
 *{
