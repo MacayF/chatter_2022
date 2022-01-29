@@ -1,6 +1,12 @@
+/* defines colors as variables for easier modifying */
+:root {
+  --grey: rgb(180, 180, 180);
+  --black: rgb(0, 0, 0);
+}
+
 /* default page style */
 .App {
-  background: rgb(216, 216, 216);
+  background: var(--grey);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,11 +17,11 @@
 }
 
 .header {
-  background: black;
+  background: var(--black);
 }
 
 .upper-header {
-  background: black;
+  background: var(--black);
   width: 100%;
   height: 2rem;
   display: flex;
@@ -25,10 +31,10 @@
 }
 
 .lower-header {
-  background: rgb(216, 216, 216);
+  background: var(--grey);
   width: 100%;
   height: 5rem;
-  border-bottom: 1px outset #000000;
+  border-bottom: 1px outset var(--black);
   border-radius: 0.5rem 0.5rem 0rem 0rem;
   display: flex;
   align-items: center;
@@ -47,47 +53,35 @@
 }
 
 .subtitle {
-  color: rgb(216, 216, 216);
+  color: var(--grey);
 }
 
 .title {
-  color: rgb(0, 0, 0);
+  color: var(--black);
   font-weight: bold;
   font-size: 2rem;
 }
 
-.footer{
-  height: 4rem;
-  width: 100%;
-  border-top: 1px outset #000000;
+.messages {
   display: flex;
-  align-items: center;
-  padding: 3rem 1rem;
-  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  overflow: auto;
+  min-height: calc(100vh - 7rem - 7rem);
+  max-height: calc(100vh - 7rem - 7rem);
+  padding: 1rem;
 }
 
-.text-input{
-  width: 100%;
-  height: 3rem;
-  padding: 0 1rem;
-  background: rgb(216, 216, 216);
-  border: 1px solid black;
-  color: black;
+.message {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background: var(--grey);
+  border: 1px solid var(--black);
+  color: var(--black);
+  filter: drop-shadow(0.2rem 0.2rem 0px var(--black));
 }
 
-.send{
-  /* gold gradient */
-  background: rgb(216, 216, 216);
-  border: 1px solid rgb(0, 0, 0);
-  height: 1.5rem;
-  width: 4rem;
-  position: absolute;
-  right: 2rem;
-  cursor: pointer;
-  color: black;
-  filter: drop-shadow(0.2rem 0.2rem 0px #000000);
-  font-size: 0.8rem;
-}
+
 
 *{
   box-sizing: border-box;

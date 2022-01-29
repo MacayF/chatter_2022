@@ -1,0 +1,32 @@
+.footer{
+  height: 4rem;
+  width: 100%;
+  border-top: 1px outset var(--black);
+  display: flex;
+  align-items: center;
+  padding: 3rem 1rem;
+  position: relative;
+}
+
+.text-input{
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  background: var(--grey);
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.send{
+  /* gold gradient */
+  background: var(--grey);
+  border: 1px solid var(--black);
+  height: 1.5rem;
+  width: 4rem;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+  color: var(--black);
+  filter: drop-shadow(0.2rem 0.2rem 0px var(--black));
+  font-size: 0.8rem;
+}
