@@ -9,7 +9,7 @@
 }
 
 .text-input{
-  width: 100%;
+  width:calc(100% - 50px);
   height: 3rem;
   padding: 0 1rem;
   background: var(--grey);
@@ -29,4 +29,10 @@
   color: var(--black);
   filter: drop-shadow(0.2rem 0.2rem 0px var(--black));
   font-size: 0.8rem;
+}
+
+.cam-btn {
+  background-color: transparent;
+  border: none;
+  margin: 0.2rem;
 }

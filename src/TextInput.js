@@ -1,6 +1,9 @@
 import React from 'react';
 import './TextInput.css';
 import {useState} from 'react';
+import { FiSend, FiCamera } from 'react-icons/fi';
+import { RiCameraFill } from 'react-icons/ri';
+
 
 function TextInput(props) {
   // const {sendMessage} = props;
@@ -19,6 +22,10 @@ function TextInput(props) {
 
   return (
     <footer className="footer">
+      <button className='cam-btn' onClick={props.showCamera}
+          style={{left:10, right:'auto'}}>
+          <RiCameraFill style={{height:35, width:35}} />
+      </button>
       <input 
         className="text-input" 
         value={text} 
