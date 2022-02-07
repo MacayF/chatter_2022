@@ -4,6 +4,7 @@ import TextInput from './TextInput'
 import {useState} from 'react'
 import Message from './Message.js';
 import Camera from 'react-snap-pic';
+import NamePicker from './NamePicker.js';
 
 
 
@@ -31,6 +32,11 @@ function App() {
     setShowCamera(false)
   }
 
+  // function called by entering name field
+  function sendName(username) {
+    console.log(username);
+  }
+
   // every time state changes react re-renders
 
   //we return the html
@@ -38,8 +44,8 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="upper-header">
-          <span className="subtitle">Macay Fischer Chat App</span>
           <img className="logo"/>
+          <NamePicker sendName={sendName}/>
         </div>
         <div className="lower-header">
           <span className="title">Talking Space.™</span>

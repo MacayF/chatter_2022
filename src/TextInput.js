@@ -6,7 +6,7 @@ import { RiCameraFill } from 'react-icons/ri';
 
 
 function TextInput(props) {
-  // const {sendMessage} = props;
+  const {sendMessage} = props;
   const [text, setText] = useState('');
 
   function send() {
