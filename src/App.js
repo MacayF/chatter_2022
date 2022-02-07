@@ -6,21 +6,28 @@ import Message from './Message.js';
 import Camera from 'react-snap-pic';
 import NamePicker from './NamePicker.js';
 
-
+var username = 'guest'
 
 function App() {
+
   const [showCamera, setShowCamera] = useState(false);
   //creates variable 'messages' (the state)
   //'setMessages' is a function used to update 'messages'
   //useState defines 'setMessages' function
   const [messages, setMessages] = useState([]);
+
+  // function called by entering name field
+  function sendName(inputName) {
+    username = inputName;
+  }
+
   // send Message runs when send button is clicked
   function sendMessage(text) {
     //create new mesage object
     const newMessage = {
       text,
       time: Date.now(),
-      user: "Macay",
+      user: username,
     };
     // se the 'messages' to be a new array that contains new
     // and old messages
@@ -30,11 +37,6 @@ function App() {
   function takePicture(img) {
     console.log(img)
     setShowCamera(false)
-  }
-
-  // function called by entering name field
-  function sendName(username) {
-    console.log(username);
   }
 
   // every time state changes react re-renders

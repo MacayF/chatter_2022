@@ -24,7 +24,7 @@ function TextInput(props) {
     <footer className="footer">
       <button className='cam-btn' onClick={props.showCamera}
           style={{left:10, right:'auto'}}>
-          <RiCameraFill style={{height:35, width:35}} />
+          <RiCameraFill style={{height:30, width:30}} />
       </button>
       <input 
         className="text-input" 

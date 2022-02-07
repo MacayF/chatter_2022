@@ -72,20 +72,6 @@
   padding: 1rem;
 }
 
-.message {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  background: var(--grey);
-  border: 1px solid var(--black);
-  color: var(--black);
-  filter: drop-shadow(0.2rem 0.2rem 0px var(--black));
-  
-  max-width: 20rem;
-  min-height: auto;
-  overflow-wrap: break-word;
-  position: relative;
-}
-
 
 
 *{
