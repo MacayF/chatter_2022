@@ -18,7 +18,6 @@ function App() {
 
   // function called by entering name field
   function sendName(inputName) {
-    // username = inputName;
     localStorage.setItem('username', inputName);
   }
 
@@ -28,7 +27,6 @@ function App() {
     const newMessage = {
       text,
       time: Date.now(),
-      // user: username,
       user: localStorage.getItem('username'),
     };
     // se the 'messages' to be a new array that contains new
@@ -60,7 +58,7 @@ function App() {
         {messages.map((msg, i)=>{
           // return a message component
           // key needs to be a unique value for each item
-          return <Message {...msg} key={i} />
+          return <Message {...msg} key={i}/>
         })}
       </div>
       {/* the sendMessage prop on TextInput = the sendMessage function (different things named the same) */}
