@@ -42,7 +42,7 @@ function NamePicker(props) {
   } else {
     return (
       <div className="name-field">
-        <span className='username'>{username}</span>
+        <span className='username'>{localStorage.getItem('username')}</span>
         <button onClick={edit} className='enter'>edit name</button>
       </div>
     );

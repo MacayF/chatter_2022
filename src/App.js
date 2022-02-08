@@ -18,7 +18,8 @@ function App() {
 
   // function called by entering name field
   function sendName(inputName) {
-    username = inputName;
+    // username = inputName;
+    localStorage.setItem('username', inputName);
   }
 
   // send Message runs when send button is clicked
@@ -27,7 +28,8 @@ function App() {
     const newMessage = {
       text,
       time: Date.now(),
-      user: username,
+      // user: username,
+      user: localStorage.getItem('username'),
     };
     // se the 'messages' to be a new array that contains new
     // and old messages
