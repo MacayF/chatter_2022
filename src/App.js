@@ -5,16 +5,19 @@ import {useState} from 'react'
 import Message from './Message.js';
 import Camera from 'react-snap-pic';
 import NamePicker from './NamePicker.js';
+import { useDB, db } from "./db";
 
 var username = 'guest'
 
 function App() {
 
+  const messages = useDB();
+
   const [showCamera, setShowCamera] = useState(false);
   //creates variable 'messages' (the state)
   //'setMessages' is a function used to update 'messages'
   //useState defines 'setMessages' function
-  const [messages, setMessages] = useState([]);
+  //const [messages, setMessages] = useState([]);
 
   // function called by entering name field
   function sendName(inputName) {
@@ -31,7 +34,8 @@ function App() {
     };
     // se the 'messages' to be a new array that contains new
     // and old messages
-    setMessages([newMessage, ...messages]);
+    //setMessages([newMessage, ...messages]);
+    db.send(newMessage);
   }
 
   function takePicture(img) {

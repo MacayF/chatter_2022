@@ -65,7 +65,7 @@
 .messages {
   display: flex;
   flex-direction: column-reverse;
-  align-items: flex-end;
+  align-items: flex-start;
   overflow: auto;
   min-height: calc(100vh - 7rem - 7rem);
   max-height: calc(100vh - 7rem - 7rem);

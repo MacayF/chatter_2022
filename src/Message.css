@@ -20,3 +20,21 @@
   font-size: 0.8rem;
   margin-top: rem;
 }
+
+.my-message {
+  margin-left: auto;
+}
+
+.my-message-text {
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  background: var(--black);
+  border: 1px solid var(--black);
+  color: var(--grey);
+  /* filter: drop-shadow(0.2rem 0.2rem 0px var(--black)); */
+  
+  max-width: 20rem;
+  min-height: auto;
+  overflow-wrap: break-word;
+  position: relative;
+}

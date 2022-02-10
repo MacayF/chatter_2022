@@ -23,11 +23,11 @@ function NamePicker(props) {
 
   function edit() {
     setEditName(true);
-    setName('');
+    // setName('');
   }
 
   //html elements
-  if(editName===true) {
+  if(editName) {
     return (
       <div className="name-field">
         <input
